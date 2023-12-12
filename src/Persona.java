@@ -11,10 +11,22 @@ public class Persona {
         this.edad = edad;
     }
 
+    public int getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
+
+
+
     public static void main(String [] args){
+
         //Funcion principal (Creacion de objetos)
         Persona persona1 = new Persona(1726864000,"Miguel",20);
-        System.out.println("La cedula es: "+ persona1.cedula);
+        persona1.setCedula(2134545666);
+        System.out.println("La cedula es: "+ persona1.getCedula());
         System.out.println("El nombre es: "+ persona1.nombre);
         System.out.println("La edad es: "+ persona1.edad);
         Persona persona2 = new Persona(1711223394,"Deisy",53);
